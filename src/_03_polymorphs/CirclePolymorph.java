@@ -20,5 +20,11 @@ double counter = 0;
 		setX((int) (getX()+Math.cos(counter)*100));
 		setY((int) (getY()+Math.sin(counter)*100));
 	}
+
+	@Override
+	public void a(int q, int w) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }

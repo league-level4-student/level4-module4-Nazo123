@@ -23,5 +23,15 @@ int counter = 10;
 		}
 		
 	}
+
+	@Override
+	public void a(int q, int w) {
+
+			setX(q);
+			setY(w);
+		
+			
+	
+	}
 	
 }

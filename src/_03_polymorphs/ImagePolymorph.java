@@ -24,7 +24,14 @@ public class ImagePolymorph extends Polymorph{
 	@Override
 	public void draw(Graphics g) {
 		
-		g.drawImage(aee, getX(), getY(), getWidth(), getHeight(), null);
+		g.drawImage(image, getX(), getY(), getWidth(), getHeight(), null);
+	}
+
+
+	@Override
+	public void a(int q, int w) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }

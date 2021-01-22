@@ -5,7 +5,9 @@ import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 
-public class TalklingPolymorph extends Polymorph implements MouseMotionListener{
+import javax.swing.JOptionPane;
+
+public class TalklingPolymorph extends Polymorph{
 	TalklingPolymorph(int x, int y) {
 		super(x, y);
 	}
@@ -16,23 +18,22 @@ public class TalklingPolymorph extends Polymorph implements MouseMotionListener{
 		g.fillRect(getX(), getY(), getWidth(), getHeight());
 	}
 
-	public void update() {
-	
-	
+	public void update(int x, int y) {
+		
 		
 	}
 
 	@Override
-	public void mouseDragged(MouseEvent e) {
-		// TODO Auto-generated method stub
-
+	public void a(int q, int w) {
+		System.out.println(q+", "+w+"");
+		if(q>=getX()&&q<=getX()+getWidth()&&w>=getY()&&w<=getY()+getHeight()) {
+			JOptionPane.showMessageDialog(null, "Please stop clicking on me :(");
+		}
+	
 	}
 
-	@Override
-	public void mouseMoved(MouseEvent e) {
-		// TODO Auto-generated method stub
-		setX(e.getX());
-		setY(e.getY());
+
+	
 	}
 	
-}
+

@@ -50,4 +50,6 @@ public abstract class Polymorph {
 	public void setWidth(int width) {
 		this.width = width;
 	}
+
+	public abstract void a(int q, int w);
 }

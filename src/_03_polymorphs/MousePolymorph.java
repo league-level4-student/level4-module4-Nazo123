@@ -7,7 +7,7 @@ import java.awt.event.MouseMotionListener;
 
 import javax.swing.JOptionPane;
 
-public class MousePolymorph extends Polymorph implements MouseMotionListener{
+public class MousePolymorph extends Polymorph {
 	MousePolymorph(int x, int y) {
 		super(x, y);
 	}
@@ -23,20 +23,13 @@ public class MousePolymorph extends Polymorph implements MouseMotionListener{
 	
 		
 	}
-
-	@Override
-	public void mouseDragged(MouseEvent e) {
-		// TODO Auto-generated method stub
+	public void a(int x, int y) {
+		setX(x);
+		setY(y);
+	
 		
 	}
 
-	@Override
-	public void mouseMoved(MouseEvent e) {
-		// TODO Auto-generated method stub
-		System.out.print(e.getX()+", "+e.getY()+"");
-		if(e.getX()>=getX()&&e.getX()<=getX()+getWidth()&&e.getY()>=getY()&&e.getY()<=getY()+getHeight()) {
-			JOptionPane.showMessageDialog(null, "Please stop clicking on me :(");
-		}
-	}
+
 	
 }
